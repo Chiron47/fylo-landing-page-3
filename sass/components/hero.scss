@@ -1,0 +1,84 @@
+@use '../util' as *;
+
+.hero {
+    // @include breakpoint(large) {
+    //     margin: rem(20);
+    // }
+    margin: 0 auto;
+    padding: rem(15);
+    max-width: rem(1000);
+
+    &__illustration {
+        width: 85%;
+        margin: 0 auto;
+        // margin: 0 rem(12) 0;
+        @include breakpoint(large) {
+            order: 2;
+        }
+    }
+
+    &__heading {
+        text-align: center;
+        line-height: 1.5;
+        margin: 0 rem(8) rem(26);
+
+        @include breakpoint(large) {
+            text-align: left;
+        }
+    }
+
+    &__info {
+        text-align: center;
+        line-height: 1.5;
+
+        @include breakpoint(large) {
+            text-align: left;
+        }
+    }
+
+    &__fieldset {
+        text-align: center;
+
+        @include breakpoint(medium) {
+            margin: 0 auto;
+        }
+
+        @include breakpoint(large) {
+            text-align: left;
+        }
+    }
+
+    &__email-input {
+        border-radius: rem(5);
+        color: var(--neutral-light-gray);
+        height: rem(45);
+        width: 100%;
+        border: rem(1.5) solid black;
+        font-size: rem(16);
+        color: var(--neutral-light-gray);
+        padding-left: rem(20);
+        margin-top: rem(40);
+        margin-bottom: rem(18);
+
+        @include breakpoint(medium) {
+            width: rem(290);
+        }
+    }
+
+    &__btn {
+        box-shadow: rem(2) rem(2) rem(3) rgba(0, 0, 0, 0.2);
+
+        @include breakpoint(medium) {
+            margin-left: rem(10);
+        }
+
+        @include breakpoint(large) {
+            margin-left: 0;
+        }
+    }
+
+    &__container {
+        max-width: 80vw;
+        margin: 0 auto;
+    }
+}

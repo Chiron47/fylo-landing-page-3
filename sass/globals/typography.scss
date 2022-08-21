@@ -1,3 +1,10 @@
-h1 {
-    color: purple;
+@use '../util' as *;
+
+h2 {
+    font-size: rem(30);
+    font-weight: 700;
+}
+
+a, a:visited, a:active {
+    text-decoration: none;
 }

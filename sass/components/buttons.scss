@@ -1,0 +1,16 @@
+@use '../util' as *;
+
+.btn {
+    width: 100%;
+    height: rem(50);
+    background-color: var(--accent-bright-blue);
+    color: white;
+    font-weight: 700;
+    font-size: rem(18);
+    border: none;
+    border-radius: 5px;
+
+    @include breakpoint(medium) {
+        width: rem(200);
+    }
+}

@@ -1,0 +1,32 @@
+@use '../util' as *;
+
+.nav {
+    height: rem(100);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: rem(1280);
+    margin: 0 auto rem(30);
+
+    &__logo {
+        height: rem(30);
+        width: rem(100);
+        margin-left: rem(25);
+    }
+
+    &__links {
+        display: flex;
+        list-style: none;
+        margin-right: rem(30);
+        padding-left: 0;
+    }
+
+    &__links li {
+        padding: 0 clamp(rem(1), 1.5vw, rem(55));
+    }
+
+    &__links a {
+        color: hsl(240, 100%, 3%);
+        font-size: rem(14);
+    }
+}
