@@ -17,6 +17,7 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="stylesheet" href="/styles.8206c151.css">
     <script defer="" src="/script.d573be0b.js"></script>
+    <script src="https://kit.fontawesome.com/78227996f9.js" crossorigin="anonymous"></script>
     <style>.attribution {
         font-size: 11px;
         text-align: center;
@@ -27,7 +28,7 @@
   <script src="/styles.8206c151.js"></script></head>
   <body>
     <header>
-      <nav class="nav">
+      <nav class="nav container">
         <img class="nav__logo" src="/logo.236e4034.svg" alt="Fylo">
         <ul class="nav__links">
           <li><a href="">Features</a></li>
@@ -38,12 +39,12 @@
     </header>
 
     <main>
-      <div class="hero grid grid--1x2">
+      <section aria-labelledby="hero__heading" class="hero container grid grid--1x2">
         <img class="hero__illustration" src="/illustration-1.a464648b.svg" alt="">
         <div class="hero__content">
-          <h2 class="hero__heading">
+          <h1 id="hero__heading" class="hero__heading">
             All your files in one secure location, accessible anywhere.
-          </h2>
+          </h1>
           <div class="hero__container">
             <div class="hero__info">
               Fylo stores your most important files in one secure location.
@@ -51,25 +52,109 @@
               family, and co-workers.
             </div>
             <fieldset class="hero__fieldset">
-              <input class="hero__email-input" type="email" name="" id="" placeholder="Enter you email...">
+              <input class="hero__email-input" type="email" name="" id="" maxlength="254" minlength="4" placeholder="Enter you email...">
               <button class="btn hero__btn">Get Started</button>
+              <div class="hero__email-check">Please check your email</div>
             </fieldset>
           </div>
         </div>
+      </section>
+      <div class="bg-curve-top"></div>
+      <div class="bg--info-block">
+        <section aria-labelledby="info-block__heading" class="info-block container grid grid--1x2">
+          <img class="info-block__illustration" src="/illustration-2.8dd574a6.svg" alt="">
+          <div class="info-block__content">
+            <h2 id="info-block__heading" class="info-block__heading">
+              Stay productive, wherever you are
+            </h2>
+            <p class="info-block__text">
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p class="info-block__text">
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required!
+            </p>
+            <div class="info-block__link-container">
+              <a class="info-block__link" href="#">
+                See how Fylo works
+                <img class="info-block__icon" src="/icon-arrow.56d7c493.svg" alt="">
+              </a>
+            </div>
+            <div class="testimonial">
+              <img src="/icon-quotes.7bba01ec.svg" alt="" class="testimonial__quote-icon">
+              <p class="testimonial__quote">
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a
+                well-oiled collaboration machine.
+              </p>
+              <div class="media">
+                <img src="/avatar-testimonial.d6ab248b.jpg" alt="A customer avatar" class="media__image">
+                <div class="media__body">
+                  <h3 class="media__title">Kyle Burton</h3>
+                  <p class="media__subtitle">Founder & CEO, Huddle</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="bg--call-to-action">
+        <section aria-labelledby="call-to-action__heaading" class="call-to-action container grid grid--1x2">
+          <header class="call-to-action__header">
+            <h2 class="call-to-action__heading">Get early access today</h2>
+            <p class="call-to-action__info">
+              It only takes a minute to sign up and our free starter tier is
+              extremely generous. If you have any questions, our support team
+              would be happy to help you.
+            </p>
+          </header>
+
+          <fieldset class="call-to-action__fieldset">
+            <input type="email" name="email" id="call-to-action__input" class="call-to-action__input" placeholder="email@example.com">
+            <div class="call-to-action__email-check">
+              Please check your email
+            </div>
+            <button class="btn call-to-action__btn">
+              Get Started For Free
+            </button>
+          </fieldset>
+        </section>
       </div>
     </main>
-
-    Stay productive, wherever you are Never let location be an issue when
-    accessing your files. Fylo has you covered for all of your file storage
-    needs. Securely share files and folders with friends, family and colleagues
-    for live collaboration. No email attachments required! See how Fylo works
-    Fylo has improved our team productivity by an order of magnitude. Since
-    making the switch our team has become a well-oiled collaboration machine.
-    Kyle Burton Founder & CEO, Huddle Get early access today It only takes a
-    minute to sign up and our free starter tier is extremely generous. If you
-    have any questions, our support team would be happy to help you. Get Started
-    For Free Phone: +1-543-123-4567 example@fylo.com About Us Jobs Press Blog
-    Contact Us Terms Privacy
+    <footer class="bg--footer">
+      <div class="footer container">
+        <img src="/logo-white.ea484c5a.svg" alt="Fylo logo" class="footer__logo">
+        <div class="grid grid--1x4">
+          <div class="footer__contact">
+            <div class="footer__phone">
+              <img src="/icon-phone.cc84a2ca.svg" alt="Phone icon">
+              Phone: <a href="tel: 543-123-4567">+1-543-123-4567</a>
+            </div>
+            <div class="footer__email">
+              <img src="/icon-email.e16cbdce.svg" alt="Email icon">
+              <a href="mailto:example@fylo.com">example@fylo.com</a>
+            </div>
+          </div>
+          <ul class="footer__list">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+          <ul class="footer__list">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+          <div class="flex social-media-icons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <footer>
       <p class="attribution">

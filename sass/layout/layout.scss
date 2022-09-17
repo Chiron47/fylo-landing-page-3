@@ -1,0 +1,31 @@
+@use '../util' as *;
+
+.container {
+    max-width: rem(1200);
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+    gap: rem(25);
+}
+
+.grid--1x2 {
+    @include breakpoint(large) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.grid--1x4 {
+    @include breakpoint(medium) {
+        // grid-template-columns: repeat(2, 1fr);
+        // justify-content: center;
+    }
+
+    @include breakpoint(large) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

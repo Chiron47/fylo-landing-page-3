@@ -25,6 +25,10 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="stylesheet" href="sass/styles.scss" />
     <script defer src="js/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/78227996f9.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
       .attribution {
         font-size: 11px;
@@ -73,9 +77,12 @@
                 type="email"
                 name=""
                 id=""
+                maxlength="254"
+                minlength="4"
                 placeholder="Enter you email..."
               />
               <button class="btn hero__btn">Get Started</button>
+              <div class="hero__email-check">Please check your email</div>
             </fieldset>
           </div>
         </div>
@@ -161,6 +168,9 @@
               class="call-to-action__input"
               placeholder="email@example.com"
             />
+            <div class="call-to-action__email-check">
+              Please check your email
+            </div>
             <button class="btn call-to-action__btn">
               Get Started For Free
             </button>
@@ -168,10 +178,39 @@
         </section>
       </div>
     </main>
-    <footer class="bg--footer"></footer>
-
-    Phone: +1-543-123-4567 example@fylo.com About Us Jobs Press Blog Contact Us
-    Terms Privacy
+    <footer class="bg--footer">
+      <div class="footer container">
+        <img src="images/logo-white.svg" alt="Fylo logo" class="footer__logo" />
+        <div class="grid grid--1x4">
+          <div class="footer__contact">
+            <div class="footer__phone">
+              <img src="images/icon-phone.svg" alt="Phone icon" />
+              Phone: <a href="tel: 543-123-4567">+1-543-123-4567</a>
+            </div>
+            <div class="footer__email">
+              <img src="images/icon-email.svg" alt="Email icon" />
+              <a href="mailto:example@fylo.com">example@fylo.com</a>
+            </div>
+          </div>
+          <ul class="footer__list">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+          <ul class="footer__list">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+          <div class="flex social-media-icons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <footer>
       <p class="attribution">

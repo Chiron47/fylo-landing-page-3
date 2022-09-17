@@ -1,5 +1,79 @@
 @use '../util' as *;
 
-.bg-footer {
-    background-color: 
+.bg--footer {
+    background-color: var(--primary-bright-blue);
+    background-size: cover;
+}
+
+.footer {
+    margin-inline: auto;
+    padding: rem(80) rem(50) rem(70);
+    justify-items: start;
+
+    &__logo {
+        margin-bottom: rem(40);
+        
+        @include breakpoint(medium) {
+            margin-inline: auto;
+        }
+    }
+
+
+    &__phone {
+        color: white;
+        font-size: rem(22);
+    }
+
+    &__phone a {
+        color: white;
+    }
+
+    &__email {
+        margin-top: rem(35);
+    }
+
+    &__email a {
+        color: white;
+        font-size: rem(22);
+    }
+
+    &__list {
+        margin-top: rem(26);
+        padding-left: 0;
+        list-style: none;
+    }
+
+    &__list > *:where(:not(:first-child)) {
+        color: white;
+        margin-top: rem(18);
+    }
+
+    // @include breakpoint-down(small) {
+    //     &__list li {
+    //         margin-top: rem(25);
+    //     }
+    // }
+
+    &__list a {
+        color: white;
+        font-size: rem(22);
+    }
+
+    &__icons {
+
+    }
+}
+
+.social-media-icons {
+    margin-top: rem(35);
+    gap: rem(18);
+
+    @include breakpoint-down(small) {
+        margin-inline: auto;
+    }
+}
+
+.social-media-icons i {
+    color: white;
+    font-size: rem(30);
 }

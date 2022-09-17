@@ -1,0 +1,66 @@
+@use '../util' as *;
+
+.bg--call-to-action {
+    background-color: var(--primary-desaturated-blue);
+}
+
+.call-to-action {
+    padding: rem(50);
+    margin-inline: auto;
+
+    &__heading {
+        font-size: rem(24);
+        color: white;
+        
+        @include breakpoint-down(medium) {
+            text-align: center;
+        }
+    }
+
+    &__info {
+        font-size: rem(18);
+        color: white;
+
+        @include breakpoint(large) {
+            max-width: 33vw;
+        }
+    }
+
+    &__fieldset {
+        max-width: rem(375);
+        @include breakpoint-down(medium) {
+            justify-self: center;
+            text-align: center;
+        }
+    }
+
+    &__email-check {
+        display: none;
+    }
+
+    &__input {
+        position: relative;
+        padding-block: rem(15);
+        padding-left: rem(8);
+        margin-bottom: rem(10);
+        width: 100%;
+        color: var(--primary-bright-blue);
+    }
+
+    &__input:invalid {
+        outline: 1px solid red;
+    }
+
+    &__input:invalid + &__email-check {
+        display: block;
+        color: var(--neutral-light-gray);
+        font-size: rem(12);
+    }
+
+    &__btn {
+        margin-top: rem(16);
+        @include breakpoint(large) {
+            max-width: rem(250);
+        }
+    }
+}

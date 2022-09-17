@@ -1,0 +1,26 @@
+@use '../util' as *;
+
+.media {
+    display: flex;
+
+    &__image {
+        border-radius: 50%;
+        width: rem(38);
+        height: rem(38);
+        object-fit: cover;
+        align-self: center;
+    }
+
+    &__body {
+        margin-left: rem(14);
+    }
+
+    &__title {
+        font-size: rem(14);
+        color: var(--primary-bright-blue);
+    }
+
+    &__subtitle {
+        font-size: rem(10);
+    }
+}
