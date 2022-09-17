@@ -404,9 +404,14 @@ fieldset {
   font-size: 1.375rem;
 }
 .footer__list {
-  margin-top: 1.625rem;
+  margin-top: 0;
   padding-left: 0;
   list-style: none;
+}
+@media only screen and (max-width: 71.87375em) {
+  .footer__list {
+    margin-top: 1.625rem;
+  }
 }
 .footer__list > *:where(:not(:first-child)) {
   color: white;
@@ -417,12 +422,16 @@ fieldset {
   font-size: 1.375rem;
 }
 .social-media-icons {
-  margin-top: 2.1875rem;
   gap: 1.125rem;
 }
 @media only screen and (max-width: 39.9375em) {
   .social-media-icons {
     margin-inline: auto;
+  }
+}
+@media only screen and (max-width: 71.87375em) {
+  .social-media-icons {
+    margin-top: 2.1875rem;
   }
 }
 

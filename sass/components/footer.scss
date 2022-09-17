@@ -12,7 +12,7 @@
 
     &__logo {
         margin-bottom: rem(40);
-        
+
         @include breakpoint(medium) {
             margin-inline: auto;
         }
@@ -38,9 +38,12 @@
     }
 
     &__list {
-        margin-top: rem(26);
+        margin-top: 0;
         padding-left: 0;
         list-style: none;
+        @include breakpoint-down(medium) {
+            margin-top: rem(26);
+        }
     }
 
     &__list > *:where(:not(:first-child)) {
@@ -65,11 +68,15 @@
 }
 
 .social-media-icons {
-    margin-top: rem(35);
+
     gap: rem(18);
 
     @include breakpoint-down(small) {
         margin-inline: auto;
+    }
+
+    @include breakpoint-down(medium) {
+        margin-top: rem(35);
     }
 }
 
