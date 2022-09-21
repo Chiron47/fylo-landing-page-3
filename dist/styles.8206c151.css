@@ -154,13 +154,12 @@ fieldset {
 }
 .hero__email-input {
   border-radius: 0.3125rem;
-  color: var(--neutral-light-gray);
-  height: 2.8125rem;
+  height: 3.125rem;
   width: 100%;
   border: 0.09375rem solid black;
   font-size: 1rem;
   color: var(--neutral-light-gray);
-  padding-left: 1.25rem;
+  padding: 0.25rem 0 0.25rem 1.25rem;
   margin-top: 2.5rem;
   margin-bottom: 0.5rem;
 }
@@ -170,15 +169,27 @@ fieldset {
   }
 }
 .hero__email-check {
-  display: none;
+  text-align: left;
+  visibility: hidden;
+}
+@media only screen and (min-width: 40em) {
+  .hero__email-check {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 71.875em) {
+  .hero__email-check {
+    text-align: left;
+  }
 }
 .hero__email-input:invalid {
   outline: 1px solid red;
 }
 .hero__email-input:invalid ~ .hero__email-check {
-  display: block;
-  color: var(--neutral-light-gray);
+  visibility: visible;
+  color: red;
   font-size: 0.75rem;
+  margin-block: 0.125rem;
 }
 .hero__btn {
   margin-top: 0.5rem;
@@ -190,9 +201,14 @@ fieldset {
     width: 12.5rem;
   }
 }
+@media only screen and (min-width: 71.875em) {
+  .hero__btn {
+    margin-left: 0;
+  }
+}
 .hero__container {
   max-width: 80vw;
-  margin: 0 auto;
+  margin-inline: auto;
 }
 
 .bg-curve-top {
@@ -344,7 +360,7 @@ fieldset {
   }
 }
 .call-to-action__email-check {
-  display: none;
+  visibility: hidden;
 }
 .call-to-action__input {
   position: relative;
@@ -358,9 +374,10 @@ fieldset {
   outline: 1px solid red;
 }
 .call-to-action__input:invalid + .call-to-action__email-check {
-  display: block;
+  visibility: visible;
   color: var(--neutral-light-gray);
   font-size: 0.75rem;
+  margin-block: 0.125rem;
 }
 .call-to-action__btn {
   margin-top: 1rem;

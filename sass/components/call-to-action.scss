@@ -35,7 +35,7 @@
     }
 
     &__email-check {
-        display: none;
+        visibility: hidden;
     }
 
     &__input {
@@ -52,9 +52,10 @@
     }
 
     &__input:invalid + &__email-check {
-        display: block;
+        visibility: visible;
         color: var(--neutral-light-gray);
         font-size: rem(12);
+        margin-block: rem(2);
     }
 
     &__btn {
